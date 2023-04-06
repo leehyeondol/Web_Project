@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+
+        .container{
+            margin: 0 100px;
+
+        }
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+           
+            text-align: center;
+            
+        }
+
+        li a {
+            display: block;
+            color: #000;
+            padding: 20px;
+            margin:-5px;
+            text-decoration: none;
+            background-color: rgb(197, 188, 188);
+        }
+
+        li a:hover {
+            background-color: #555;
+            color: white;
+
+        }
+
+        li a:hover:not(.active) {
+            background-color: #555;
+            color: white;
+        }
+        
+
+        ul li {
+            display: inline-block; 
+            text-align: center;
+            margin: 5px;
+        }
+        #header{
+            position:relative;
+            
+            display: flex;
+
+            flex-flow: row nowrap;
+            justify-content: space-between;
+            align-items: center;
+            height: 120px;
+            background-color:#96C7ED;            
+        }
+        #headerleft{
+            position:relative;
+            margin-left: 30px;
+            padding-top: 20px;
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: flex-start;
+            align-items: center;
+            gap: 20px;
+        }
+
+        #nav{
+            position:relative;
+            width:50%;
+            float:left;
+            text-align: center;
+        }
+
+        #footer{
+            background-color: #96C7ED;
+            width: 100%;
+            height:230px;
+            clear: both;
+        }
+        #headname{
+            position: relative;
+            color:white;
+            font-size: 2.0em;
+            margin-left: 800;
+ 
+        }
+        #menu{
+            position: absolute;
+            margin-left: 70%;
+            margin-top:30px;
+        }
+        #subme{
+            width:100px;
+            position: absolute;
+            left:255px;       
+            top: 0px;
+            background-color: rgb(197, 188, 188);
+
+        }
+
+        
+        ul ul{
+            display: none;
+        }
+        ul li:hover > ul {
+            display:inherit;
+        }
+
+
+
+        #line{
+            clear:left;
+            border-style: dotted
+        }
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        td, th {
+            text-align: center;
+            border: 1px solid #ddd;
+            padding: 8px;
+        }
+
+        tr:nth-child(even){background-color: #f2f2f2;}
+
+        td:hover {background-color: #ddd;}
+
+        td{
+            border-right: hidden;
+        }
+        #fixed{
+            width: 300px;
+            height: 80px;
+            background-color: #96C7ED;
+            position: fixed;
+            top: 400px;
+            left: 800px;
+            text-align: center;
+        }
+
+        a ul {
+            display: none; /* 초기에는 숨겨진 상태 */
+        }
+
+        a:hover ul {
+            display: block; /* 네비게이션바가 마우스를 hover할 때 보이도록 변경 */
+        }
+        
+
+
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div id = "header">
+            <div id = "headerleft">
+                <img src = "logo.png" width = "220" height = "80"/>
+                <p id = "headname"> Premium bookshop</p>
+            </div>
+    
+            <ul id ="menu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#news">Books</a></li>
+                <li><a href="#contact">Gifts</a>
+                    <ul id = "subme">
+                        <li><a href="#">kids</a></li>
+                        <li><a href="#">adult</a></li>
+                        <li><a href="#">for all</a></li>
+                    </ul></li>
+            </ul>
+    
+    
+        </div>
+    
+    
+        <div style="text-align : center">
+            <br><b>The Best Bookstore Online<br>
+             Over 6 million books ready for shipment within 
+             24 hours and 4.5 million eBooks to download now.</b><br><br>
+             <hr>
+        </div>
+    
+        <div id ="nav">
+            <b><br><br>The President Is Missing<br><br></b>
+            <p>
+                Please join us in welcoming President Bill Clinton and the world's bestselling author
+                James Patterson to celebrate the release of their new novel, The President is
+                Missing. A limited number of wristbands for event access will be distributed
+                beginning at 9am the day of the even<br><br>
+            </p>
+            <div>
+
+                <img src = "clinton.jpg"  width = "250" height = "350" alt = "clinton" />
+            </div>
+            <br><br>
+            
+            <hr id = "line">
+
+            <b><br><br>True Roots: A Mindful Kitchen with More Than 100 Recipes Free of Gluten, Dairy, and Refined Sugar<br><br></b>
+            <p>
+                In her first book, Kristin Cavallari shared her personal journey along with her tips on
+                everything from style to relationships. And now, with True Roots, Cavallari shows
+                you that improving the way you eat doesn't have to be difficult--a clean and toxin-
+                free diet can and should be fun, easy, and enjoyable. She learned the hard way that
+                dieting leads nowhere good, and that a clean lifestyle is the ticket to feeling and
+                being healthy.<br><br>
+            </p>
+            <img src = "roots.jpg"  width = "250" height = "350" alt = "roots" /> <br><br>
+            
+
+
+            <hr id = "line">
+
+            <b><br><br>Selling Boldly: Applying the New Science of Positive
+                Psychology to Dramatically Increase Your Confidence,
+                Happiness, and Sales<br><br></b>
+            <p>
+                Fear is the reason most salespeople don't like to pick up the phone. Fear is the
+                reason we don't ask for the business more, even though our customers want to buy
+                from us.<br><br>
+            </p>
+            <img src = "selling.jpg"  width = "250" height = "350" alt = "roots" /> <br><br>
+            
+
+            <hr id = "line">
+
+            <b><br><br>I've Got My Eyes on You (B&N Exclusive Edition)<br><br></b>
+            <p>
+                A new thriller from #1 New York Times bestselling author and "Queen of Suspense"
+                Mary Higgins Clark. After a party when her parents are away, eighteen-year-old Kerry
+                Dowling is found fully dressed at the bottom of the family pool. The immediate
+                suspect is her boyfriend who had a bitter argument with her at the party. Then there
+                is a twenty-year-old neighbor who was angry because she didn't invite him to the
+                party.<br><br>
+            </p>
+            <img src = "mary.jpg" width = "250" height = "350" alt = "roots" /> <br><br>
+            
+            <hr id = "line">
+
+            <b><br>Our Price<br><br></b>
+
+            <table>
+
+                <tr>
+                    <th>Books</th>
+                    <th>Year</th>
+                    <th>Price</th>
+                </tr>
+                <tr>
+                    <td>True Roots</td>
+                    <td>2012</td>
+                    <td>20$</td>
+                </tr>
+                <tr>
+                    <td>Harry potter</td>
+                    <td>2005</td>
+                    <td>38$</td>
+                </tr>
+                <tr>
+                    <td>The outilers</td>
+                    <td>2015</td>
+                    <td>12$</td>                   
+                </tr>
+                <tr>
+                    <td>The big data</td>
+                    <td>2022</td>
+                    <td>25$</td>
+                </tr>               
+                </table>
+                <br><br>
+
+
+            <hr id = "line">
+            <p> Send your feedback to us<br></p>
+            <form>
+                <input type = "text" id="text" style="width:500px;height:200px;"><br>
+                <input type="submit" value = "Submit" id = "submit" style = "background-color : #96C7ED "><br><br>
+            </form>
+
+
+        </div>
+       
+        <div id ="footer">
+            <p style = "text-align: right;">
+                Barnes & Noble Booksellers, Inc., Legal Department<br>
+                122 Fifth Avenue<br>
+                New York, NY 10011<br>
+                Fax: (212) 463-5683 <br><br><br><br>
+                <div style = "font-style: italic;">
+                    <p style = "text-align: right;">Location: <a href="#" targer = "_blank">Click Map</a></p>
+                </div>
+            </p>
+
+        </div>
+
+        <div id = "fixed">
+            10% OFF $35+ | 15% OFF $60+<br>
+            *USE CODE: HAPPYAPRIL
+        </div>
+        
+    </div>
+    
+</body>
+
+</html>
